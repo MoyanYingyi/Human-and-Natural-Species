@@ -1,0 +1,169 @@
+/* Global reset-ish */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FCFBF8;
+}
+
+/* Page frame */
+.page-wrapper {
+    max-width: 960px;
+    margin: 20px auto;
+    background-color: #ffffff;
+
+}
+
+/* Header */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;   /* keeps them in one row */
+    
+    gap: 20px;                     /* space between logo and title */
+    padding: 15px 20px;
+    background: #FCFBF8;
+}
+
+.logo-box img {
+    width: 120px !important;   /* FORCE the width */
+    height: auto !important;   /* keep aspect ratio */
+    display: block;
+    object-fit: contain;
+}
+
+
+.site-title {
+    font-size: 2rem;
+    font-weight: bold;
+    flex: 1;                       /* pushes title to fill remaining space */
+    text-align: left;              /* keeps title aligned in a row */
+}
+
+/* Navigation */
+.main-nav {
+    display: flex;
+    background:#f8ee6f;
+    font-weight: bold;
+}
+
+.main-nav .nav-link {
+    flex: 1;
+    text-align: center;
+    padding: 12px 0;
+    text-decoration: none;
+    color: #333;
+    border-right: 1px solid #777;
+}
+
+.main-nav .nav-link:last-child {
+    border-right: none;
+}
+
+.main-nav .nav-link:hover {
+    background-color: #efefef;
+}
+
+/* Generic section block */
+.section-block {
+
+    padding: 20px;
+}
+
+/* Placeholder boxes (for images etc.) */
+.placeholder {
+    border: 1px solid #ccc;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-style: italic;
+}
+
+/* Intro */
+.intro p {
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* News grid */
+.news-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.news-card {
+    flex: 1;
+    border: 1px solid #777;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    border-bottom: 1px solid #777;
+    height: 120px;
+}
+
+.news-title {
+    padding: 20px 10px;
+    text-align: center;
+}
+
+/* Other image */
+.other-image-box {
+    margin-top: 10px;
+    height: 150px;
+}
+
+/* References */
+.references ul {
+    margin-top: 10px;
+    margin-left: 20px;
+    line-height: 1.5;
+}
+
+/* Footer */
+.site-footer {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: gray;
+}
+
+/* Simple responsiveness */
+@media (max-width: 768px) {
+
+    .site-header {
+        flex-direction: column;
+    }
+
+    .logo-box {
+        width: 100%;
+        border-right: none;
+
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+    }
+
+    .main-nav .nav-link {
+        flex: 1 1 50%;
+
+    }
+
+    .news-grid {
+        flex-direction: column;
+    }
+}
