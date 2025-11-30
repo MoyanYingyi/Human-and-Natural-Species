@@ -84,7 +84,7 @@ body {
 }
 
 .main-nav .nav-link:hover {
-    background-color: #efefef;
+    background-color: #EFEFEF;
 }
 
 
@@ -95,7 +95,7 @@ body {
 
 
 .placeholder {
-    border: 1px solid #ccc;
+    border: 1px solid #CCc;
     height: 180px;
     display: flex;
     align-items: center;
@@ -229,27 +229,22 @@ body {
         flex-direction: column;
     }
 }
-@media (min-width: 600px) {
-
-    /* Make navigation text larger and spaced better */
+@media (max-width: 600px) {
     .main-nav .nav-link {
         padding: 14px 0;
         font-size: 1.1rem;
     }
 
-    /* Improve table readability by increasing padding */
     .info-table th, 
     .info-table td {
         padding: 14px;
         font-size: 1rem;
     }
 
-    /* Slightly increase general font size */
     body {
         font-size: 18px;
     }
 
-    /* Keep video nicely sized on medium screens */
     .video-player,
     .video-container iframe {
         max-width: 90%;
@@ -257,12 +252,10 @@ body {
         display: block;
     }
 
-    /* Add more space between website sections */
     .section-block {
         padding: 30px;
     }
 
-    /* Make intro section text wider for better readability */
     .intro p {
         max-width: 85%;
         margin-left: auto;
