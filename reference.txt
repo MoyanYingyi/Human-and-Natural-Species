@@ -1,0 +1,26 @@
+Reference:
+Picture:
+index.html:
+wolf.jpg: https://awionline.org/content/endangered-species
+
+seaturtle.png: UN Report: Nature’s Dangerous Decline ‘Unprecedented’; Species Extinction Rates ‘Accelerating’
+https://www.un.org/sustainabledevelopment/blog/2019/05/nature-decline-unprecedented-report/
+
+elk.webp: Native species or invasive? The distinction blurs as the world warms
+https://trellis.net/article/native-species-or-invasive-distinction-blurs-world-warms/
+
+skull.jpg: We have done wildlife protection all wrong: let them die. 
+https://thebannercsi.com/2024/05/12/we-have-done-wildlife-protection-all-wrong-let-them-die/
+
+elk-painting.jpg: What Role Does Indiana Have To Play In Species Extinction?
+https://www.wfyi.org/news/articles/what-role-does-indiana-have-to-play-in-species-extinction
+
+origin.html:
+species_origin.avif: https://www.economist.com/science-and-technology/2012/12/01/the-origin-of-species
+video_playback.mp4: What Is Natural Selection?
+ https://www.youtube.com/watch?v=0SCjhI86grU
+invasion.html:
+carp-fox-river.jpg: One idea to curb the invasive Asian carp: Eat them
+https://lailluminator.com/2024/07/29/asian-carp/
+The Fight Against America’s Most Hated Fish- Asian Carp.mp4:
+https://www.youtube.com/watch?v=EC99hNGK22k&t=1561s

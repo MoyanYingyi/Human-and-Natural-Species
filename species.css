@@ -1,38 +1,35 @@
-/* Global reset-ish */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #FCFBF8;
+    font-size:15px;
 }
-
-/* Page frame */
 .page-wrapper {
-    max-width: 960px;
+    max-width: 70%;
     margin: 20px auto;
     background-color: #ffffff;
 
 }
 
-/* Header */
+
 .site-header {
     display: flex;
     align-items: center;
-    justify-content: flex-start;   /* keeps them in one row */
+    justify-content: flex-start;   
     
-    gap: 20px;                     /* space between logo and title */
+    gap: 20px;                    
     padding: 15px 20px;
     background: #FCFBF8;
 }
 
 .logo-box img {
-    width: 120px !important;   /* FORCE the width */
-    height: auto !important;   /* keep aspect ratio */
-    display: block;
+    width: 120px !important;   
+    height: auto !important;  
     object-fit: contain;
 }
 
@@ -40,11 +37,33 @@ body {
 .site-title {
     font-size: 2rem;
     font-weight: bold;
-    flex: 1;                       /* pushes title to fill remaining space */
-    text-align: left;              /* keeps title aligned in a row */
+    flex: 1;                       
+    text-align: left;              
 }
-
-/* Navigation */
+.hero-image {
+    height: 300px;                
+    background-image: url("wolf.jpg");
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;       
+}
+.origin-image {
+    height: 300px;                
+    background-image: url("species_origin.avif");
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;       
+}
+.invasion-image {
+    height: 300px;                
+    background-image: url("carp-fox-river.jpg");
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;       
+}
 .main-nav {
     display: flex;
     background:#f8ee6f;
@@ -68,13 +87,13 @@ body {
     background-color: #efefef;
 }
 
-/* Generic section block */
+
 .section-block {
 
     padding: 20px;
 }
 
-/* Placeholder boxes (for images etc.) */
+
 .placeholder {
     border: 1px solid #ccc;
     height: 180px;
@@ -85,7 +104,7 @@ body {
     font-style: italic;
 }
 
-/* Intro */
+
 .intro p {
     margin-top: 15px;
     line-height: 1.5;
@@ -96,7 +115,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* News grid */
+
 .news-grid {
     display: flex;
     gap: 20px;
@@ -111,29 +130,47 @@ body {
 }
 
 .card-image {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-bottom: 1px solid #777;
-    height: 120px;
+}
+.image1 {
+    background-image: url("elk.webp");
 }
 
+.image2 {
+    background-image: url("seaturtle.png");
+}
+
+.image3 {
+    background-image: url("skull.jpg");
+}
 .news-title {
     padding: 20px 10px;
     text-align: center;
 }
 
-/* Other image */
+
 .other-image-box {
     margin-top: 10px;
-    height: 150px;
+    height: 700px;
+    background-image: url("elk_painting.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #777;
 }
 
-/* References */
+
 .references ul {
     margin-top: 10px;
     margin-left: 20px;
     line-height: 1.5;
 }
 
-/* Footer */
+
 .site-footer {
     padding: 10px 20px;
     font-size: 0.9rem;
@@ -141,8 +178,33 @@ body {
     color: gray;
 }
 
-/* Simple responsiveness */
-@media (max-width: 768px) {
+.video-player {
+    border: 1px solid #777;
+    margin-top: 20px;
+}
+
+.credit {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 8px;
+}
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.info-table th, .info-table td {
+    border: 1px solid #777;
+    padding: 10px;
+    text-align: left;
+}
+
+.info-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+@media (max-width: 1024px) {
 
     .site-header {
         flex-direction: column;
@@ -165,5 +227,45 @@ body {
 
     .news-grid {
         flex-direction: column;
+    }
+}
+@media (min-width: 600px) {
+
+    /* Make navigation text larger and spaced better */
+    .main-nav .nav-link {
+        padding: 14px 0;
+        font-size: 1.1rem;
+    }
+
+    /* Improve table readability by increasing padding */
+    .info-table th, 
+    .info-table td {
+        padding: 14px;
+        font-size: 1rem;
+    }
+
+    /* Slightly increase general font size */
+    body {
+        font-size: 18px;
+    }
+
+    /* Keep video nicely sized on medium screens */
+    .video-player,
+    .video-container iframe {
+        max-width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* Add more space between website sections */
+    .section-block {
+        padding: 30px;
+    }
+
+    /* Make intro section text wider for better readability */
+    .intro p {
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
