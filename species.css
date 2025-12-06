@@ -12,12 +12,10 @@ body {
 .page-wrapper {
     max-width: 70%;
     margin: 20px auto;
-    background-color: #ffffff;
+    background-color: #FCFBF8;
     
 }
-br{
-    background-color: #FCFBF8;
-}
+
 main{
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
     padding: 20px; 
@@ -217,7 +215,7 @@ a:hover {
     padding: 10px 20px;
     font-size: 0.9rem;
     font-style: italic;
-    color: gray;
+    color: black;
 }
 
 .video-player {
