@@ -41,7 +41,7 @@ body {
     text-align: left;              
 }
 .hero-image {
-    height: 300px;                
+    height: 500px;                
     background-image: url("wolf.jpg");
     background-size: cover;       
     background-position: center;  
@@ -49,7 +49,7 @@ body {
     border: 1px solid #ccc;       
 }
 .origin-image {
-    height: 300px;                
+    height: 500px;                
     background-image: url("species_origin.avif");
     background-size: cover;       
     background-position: center;  
@@ -57,12 +57,20 @@ body {
     border: 1px solid #ccc;       
 }
 .invasion-image {
-    height: 300px;                
+    height: 500px;                
     background-image: url("carp-fox-river.jpg");
     background-size: cover;       
     background-position: center;  
     background-repeat: no-repeat;
     border: 1px solid #ccc;       
+}
+.extinction-image{
+    height: 500px;                
+    background-image: url("rhino.jpg.webp");
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;  
 }
 .main-nav {
     display: flex;
@@ -103,13 +111,23 @@ body {
     color: #666;
     font-style: italic;
 }
-
+form{
+    display: flex;;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
 
 .intro p {
     margin-top: 15px;
     line-height: 1.5;
 }
-
+a{
+    color: inherit;        
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
 .section-title {
     text-align: center;
     margin-bottom: 10px;
@@ -127,6 +145,7 @@ body {
     border: 1px solid #777;
     display: flex;
     flex-direction: column;
+    background: whitesmoke;
 }
 
 .card-image {
@@ -162,7 +181,24 @@ body {
     background-repeat: no-repeat;
     border: 1px solid #777;
 }
-
+.carp-image-box {
+    margin-top: 10px;
+    height: 700px;
+    background-image: url("carp.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #777;
+}
+.population-image-box {
+    margin-top: 10px;
+    height: 700px;
+    background-image: url("PolarBearPopulation.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #777;
+}
 
 .references ul {
     margin-top: 10px;
@@ -260,5 +296,12 @@ body {
         max-width: 85%;
         margin-left: auto;
         margin-right: auto;
+    }
+    form{
+        width: 60%;
+        max-width: 30em;
+        display:grid;
+        grid-gap: 1em;
+        grid-template-columns: 6em 1fr;
     }
 }
